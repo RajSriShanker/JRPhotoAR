@@ -8,6 +8,9 @@
     </head>
 
     <body style="margin: 0; overflow: hidden;">
+        	<a-assets>
+		<a-asset-item id="exoFont" src="fonts/exoBlack.typeface.json"></a-asset-item>
+	</a-assets>
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
@@ -33,12 +36,8 @@
                     rotation="-90 0 0"
                     gesture-handler
                 ></a-image>
+                <a-text value="This is Raj and Judi" font="fonts/Exo2Bold.fnt" color="red" rotation="-90 0 0" align="center" scale="2 2 2"></a-text>
             </a-marker>
-            <a-entity position="0 1,8 -1"
-                      text="value: This is Raj and Judi";
-                      color: #212121;
-                      align: center;
-                      wrapCount: 40"></a-entity>
             <a-entity camera></a-entity>
         </a-scene>
     </body>
